@@ -49,29 +49,30 @@ f,g,a,g,f,f,f,f,g,g,g,f,h,h,f,f
 g,a,a,a,g,f,f,f,f,f,f,f,f,f,f,h
 a,a,a,a,a,g,h,f,h,f,f,f,f,f,f,f
 NAME sailing1
-EXT 12,3 1 3,12
+EXT 12,3 1 3,12 FX wave DLG 5
 PAL 1
 TUNE 2
 
 ROOM 1
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,b,c,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,e,d,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,0,a,a,a,a,a,a
+a,a,b,c,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,e,d,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME sailing2
-EXT 3,12 0 12,3
+ITM 1 12,2
+EXT 3,12 0 12,3 FX wave DLG 6
 PAL 0
 
 TIL a
@@ -184,6 +185,7 @@ TIL f
 11101110
 11101110
 NAME grass
+WAL true
 
 TIL g
 10101010
@@ -195,6 +197,7 @@ TIL g
 10101010
 01010101
 NAME sand
+WAL true
 
 TIL h
 11111111
@@ -206,6 +209,7 @@ TIL h
 11010110
 11101110
 NAME flowers
+WAL true
 
 SPR A
 00010000
@@ -245,9 +249,9 @@ SPR a
 01111110
 00111100
 00000000
-NAME boat
+NAME merchantShip1
 DLG 0
-POS 0 9,10
+POS 0 8,11
 
 SPR b
 00111100
@@ -267,7 +271,7 @@ SPR b
 00011100
 00011000
 00010000
-NAME capsized
+NAME capsizedShip
 DLG 3
 POS 1 4,10
 
@@ -293,6 +297,60 @@ NAME remains
 DLG 4
 POS 1 9,11
 
+SPR d
+00000000
+00001000
+00011000
+00111000
+00001000
+11001011
+01111110
+00111100
+>
+00001000
+00011000
+00111000
+00001000
+11001011
+01111110
+00111100
+00000000
+NAME pirateShip
+DLG 7
+POS 0 12,5
+
+SPR e
+00000000
+00000000
+11111111
+10000001
+11111111
+10011001
+10000001
+11111111
+NAME treasure
+DLG 9
+
+SPR f
+00001000
+00011000
+00111000
+00001000
+11001011
+01111110
+00111100
+00000000
+>
+00000000
+00001000
+00011000
+00111000
+00001000
+11001011
+01111110
+00111100
+NAME playerPirate
+
 ITM 0
 00000000
 01100000
@@ -307,39 +365,87 @@ DLG 1
 
 ITM 1
 00000000
-00111100
-00100100
-00111100
-00010000
+00000000
 00011000
-00010000
+00111100
+00111100
 00011000
-NAME key
+00000000
+00000000
+>
+00111100
+01000010
+10011001
+10100101
+10100101
+10011001
+01000010
+00111100
+NAME auraOfProtection
 DLG 2
 BLIP 2
 
+ITM 2
+00000000
+00000000
+00011000
+00111100
+00111100
+00011000
+00000000
+00000000
+NAME goldCoin
+DLG 8
+
 DLG 0
-There's a huge whirlpool to the northeast! Some ships sailed in and never came back out!
-NAME cat dialog
+A merchant ship! {drws "merchantShip1"}{pg}They say there's a huge whirlpool to the northeast! Some ships sailed that way and never came back!
+NAME merchant dialog 1
 
 DLG 1
 You found a rubber ducky!
 NAME tea dialog
 
 DLG 2
-A key! {wvy}What does it open?{wvy}
+{wvy}What is this...?{wvy}
 NAME key dialog
 
 DLG 3
-We made it safely through the whirlpool, but it looks like this ship has capsized! I wonder where we ended up...
+Somehow, our ship is still intact. Looks like these guys were not as lucky.{pg}I wonder where we are...
 NAME capsized dialog
 
 DLG 4
 ...
 NAME remains dialog
 
-VAR a
-42
+DLG 5
+Oh no! We got caught in the whirlpool!
+NAME exit narration 1
+
+DLG 6
+"""
+{
+  - {item "1"} >= 1 ?
+    {property locked false}The Aura of Protection grants safe passage! 
+  - else ?
+    {property locked true}I'm afraid we won't make it back safely if we try to pass through the whirlpool again. Maybe something here can help us...
+}
+"""
+NAME return to overworld
+
+DLG 7
+A pirate ship! {drws "pirateShip"} 
+NAME pirateShip dialog
+
+DLG 8
+A {clr 3}gold{/clr} coin!
+NAME goldCoin dialog
+
+DLG 9
+A treasure chest! It's filled with gold!{item "2" {{item "2"} + 100}}
+NAME treasure dialog
+
+VAR isPirate
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
